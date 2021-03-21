@@ -6,14 +6,7 @@
       <div class="row">
         <div class="col-md-2" @click="moveToMainPage">
           <a class="navbar-brand" href="#">
-            <img
-              src="https://raw.githubusercontent.com/kuji2336/saechvogame.io/master/Screenshot_1-removebg-preview.png"
-              width="70"
-              height="60"
-              class="d-inline-block align-center"
-              alt=""
-              loading="lazy"
-            />
+             Lingua.io
           </a>
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
