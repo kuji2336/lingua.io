@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<app-header></app-header>
+<router-view></router-view>
+<famous-words></famous-words>
+<app-footer></app-footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppHeader from '@/layouts/AppHeader'
+import AppFooter from '@/layouts/AppFooter'
+import famousWords from '@/global/famousWords'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    AppHeader,
+    AppFooter,
+    famousWords
+
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "primefont";
+  src: url(assets/fonts/Staatliches-Regular.ttf);
+}
+
+@font-face {
+  font-family: "secondaryfont";
+  src: url(assets/fonts/YuseiMagic-Regular.ttf);
 }
 </style>
